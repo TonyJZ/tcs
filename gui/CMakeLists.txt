@@ -17,6 +17,7 @@ include         (${QT_USE_FILE})
 add_definitions (${QT_DEFINITIONS} "-DQT_NO_KEYWORDS")
 
 add_executable(gui_random_walker_segmentation
+  ../src/color.cpp
   ${GUI_SOURCES}
   ${GUI_FORMS_HEADERS}
   ${GUI_HEADERS_MOC}
@@ -28,5 +29,4 @@ target_link_libraries(gui_random_walker_segmentation
   ${QT_LIBRARIES}
   ${PCL_LIBRARIES}
   ${VTK_LIBRARIES}
-  ${TVIEWER_LIBRARIES}
 )
